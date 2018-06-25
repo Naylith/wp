@@ -13,11 +13,17 @@
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+      <div>Logo Placeholder
+	<img src='../../media/business-logo.png' /> 
+	</div>
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+      <div>Website navigation links
+	<a href="https://titan.csit.rmit.edu.au/~S3743586/wp/processing.php?ref=product"> Products </a> 
+	<a href="https://titan.csit.rmit.edu.au/~S3743586/wp/processing.php?ref=service"> Service </a> 
+	<a href="https://titan.csit.rmit.edu.au/~S3743586/wp/processing.php?ref=login"> Login </a> 
+	</div>
     </nav>
 
     <main>
@@ -30,7 +36,7 @@
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here.</div>
+      </script> Nicole Brooker, S3743586.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
