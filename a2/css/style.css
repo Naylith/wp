@@ -1,299 +1,223 @@
 /* Insert your styles here */
-html,
-body
-{
-  padding:20px;
-  background: Cornsilk;
-
-background: linear-gradient(HoneyDew,White, Mistyrose);
-
-background-image: url("../../../media/pattern.png");
- background-repeat: repeat;
-background-size: cover;
-
-  border: none ;
-  box-sizing: border-box;
-display: block;
-max-width: 1250px;
-margin: 0 auto !important;
-float: none !important;
-letter-spacing: 3px;
+ html, body {
+     padding:20px;
+     background: Cornsilk;
+     background: linear-gradient(HoneyDew,White, Mistyrose);
+     background-image: url("../../../media/pattern.png");
+     background-repeat: repeat;
+     background-size: cover;
+     border: none ;
+     box-sizing: border-box;
+     display: block;
+     max-width: 1250px;
+     margin: 0 auto !important;
+     float: none !important;
+     letter-spacing: 3px;
 }
-html {
-  min-height:100vh;
+ html {
+     min-height:100vh;
 }
-body {
-  min-height:calc(100vh - 40px);
+ body {
+     min-height:calc(100vh - 40px);
 }
-
-
-
 /* Give all semantic body elements uniform layout style */
-header,
-nav,
-main,
-aside,
-section,
-article,
-details,
-div{
-margin: 5px;
-  padding: 5px;
-  box-sizing: border-box;
+ header, nav, main, aside, section, article, details, div{
+     margin: 5px;
+     padding: 5px;
+     box-sizing: border-box;
 }
-
-header
-{
-  background-color: Cornsilk;
-  border: none;
-  font-size: 300%;
-  font-weight: bold;
-font-family: 'Annie Use Your Telescope';font-size: 55px;
-color: LightBlue;
-text-align: center;
-border-radius: 8px;
-
+ header {
+     background-color: Cornsilk;
+     border: none;
+     border-radius: 8px;
 }
-
-
-nav
-{
-  background-color: LightPink;
-  border: none;
-border-radius: 8px;
-text-align:center;
-    color: CornSilk;
-	font-size: 30px;
-font-family: 'Annie Use Your Telescope';
-font-weight: bold;
-
+ nav {
+     background-color: LightPink;
+     border: none;
+     border-radius: 8px;
+     text-align:center;
+     color: CornSilk;
+     font-size: 30px;
+     font-family: 'Annie Use Your Telescope';
+     font-weight: bold;
 }
-
-
-main
-{
-  background-color: LightBlue;
-  border: solid;
-border-width: 15px;
-border-radius: 10px;
- border-color: Thistle;
-
+ main {
+     background-color: LightBlue;
+     border: solid;
+     border-width: 15px;
+     border-radius: 10px;
+     border-color: Thistle;
 }
-
-
-footer
-{
-  background-color: LightPink;
-  border: none;
-font-family: 'Annie Use Your Telescope';font-size: 25px;
-font-weight: bold;
-    color: CornSilk;
-	font-size: 20px;
-
-
+ footer {
+     background-color: LightPink;
+     border: none;
+     font-family: 'Times New Roman';
+    font-size: 25px;
+     font-weight: normal;
+     color: CornSilk;
 }
-
-article
-{
- background-color: LightBlue;
-  border: none;
+ article {
+     background-color: LightBlue;
+     border: none;
 }
-
-
-aside
-{
-  background-color: LightBlue;
-  border: none;
+ aside {
+     background-color: LightBlue;
+     border: none;
 }
-
-
-section
-{
-  border: none;
- background-color: LightBlue;
+ section {
+     border: none;
+     background-color: LightBlue;
 }
-
-
-details
-{
-  background-color: LightPink;
-  border: none;    
+ details {
+     background-color: LightPink;
+     border: none;
 }
-
-div
-{
-  border: none;
+ div {
+     border: none;
 }
-
-header img {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-border-radius: 8px;
+ header img {
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     border-radius: 8px;
 }
-
-a:link, a:visited {
-    color: Ivory;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-font-size: 30px;
+ a:link, a:visited {
+     color: Ivory;
+     padding: 14px 25px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 30px;
 }
-
-
-h1{
-font-family: 'Annie Use Your Telescope';font-size: 30px;
-font-weight: bold;
- border-color: HoneyDew;
-color: CornSilk;
+ h1{
+     font-family: 'Annie Use Your Telescope';
+    font-size: 30px;
+     font-weight: bold;
+     border-color: HoneyDew;
+     color: CornSilk;
 }
-
-p{
-font-family: 'Annie Use Your Telescope';font-size: 25px;
-font-weight: bold;
-color: CornSilk;
+ p{
+     font-family: 'Annie Use Your Telescope';
+    font-size: 25px;
+     font-weight: bold;
+     color: CornSilk;
 }
-
-figure {
-font-family: 'Annie Use Your Telescope';font-size: 25px;
-font-weight: bold;
-
+ figure {
+     font-family: 'Annie Use Your Telescope';
+    font-size: 25px;
+     font-weight: bold;
+     float: inherit;
+     text-align: center;
 }
-
-a:hover, a:active {
-    background-color: Pink;
+ a:hover, a:active {
+     background-color: Pink;
 }
-
-
-
-
-
-
-
-
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {display: block;
-    margin-left: auto;
-    margin-right: auto;
+ * {
+    box-sizing: border-box
 }
-* {box-sizing:border-box}
-
+ body {
+    font-family: Verdana, sans-serif;
+     margin:0
+}
+ .mySlides {
+    display: none
+}
+ img {
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+ * {
+    box-sizing:border-box
+}
 /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+ .slideshow-container {
+     max-width: 1000px;
+     position: relative;
+     margin: auto;
 }
-
 /* Hide the images by default */
-.mySlides {
-    display: none;
+ .mySlides {
+     display: none;
 }
-
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+ .prev, .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: white;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
 }
-
 /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+ .prev:hover, .next:hover {
+     background-color: rgba(0,0,0,0.8);
 }
-
-
 /* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin: 0 2px;
+     background-color: #bbb;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
 }
-
-.active, .dot:hover {
-  background-color: #717171;
+ .active, .dot:hover {
+     background-color: #717171;
 }
-
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+     from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    }
+}
+ @keyframes fade {
+     from {
+        opacity: .4
+    }
+     to {
+        opacity: 1
+    }
+}
+ .accordion {
+     background-color: White;
+     padding: 18px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 15px;
+     transition: 0.4s;
+}
+ .active, .accordion:hover {
+     background-color: Pink;
+}
+ .panel {
+     padding: 0 18px;
+     background-color: LightBlue;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-out;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-
-
-
-.accordion {
-    background-color: White;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: Pink;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: LightBlue;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-
-
-
-
-
-
-
-.quantity-btn-color: #95d7fc;
-.form-group {
-	width: 30%;
-	margin: 30px;
-	.glyphicon {
-		color: $quantity-btn-color;
-	}
-}
