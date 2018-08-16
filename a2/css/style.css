@@ -26,9 +26,15 @@
      padding: 5px;
      box-sizing: border-box;
 }
- header {
+ header{
      background-color: Cornsilk;
      border: none;
+     font-size: 300%;
+     font-weight: bold;
+     font-family: 'Annie Use Your Telescope';
+     font-size: 55px;
+     color: LightBlue;
+     text-align: center;
      border-radius: 8px;
 }
  nav {
@@ -52,7 +58,7 @@
      background-color: LightPink;
      border: none;
      font-family: 'Times New Roman';
-    font-size: 25px;
+     font-size: 25px;
      font-weight: normal;
      color: CornSilk;
 }
@@ -91,20 +97,20 @@
 }
  h1{
      font-family: 'Annie Use Your Telescope';
-    font-size: 30px;
+     font-size: 30px;
      font-weight: bold;
      border-color: HoneyDew;
      color: CornSilk;
 }
  p{
      font-family: 'Annie Use Your Telescope';
-    font-size: 25px;
+     font-size: 25px;
      font-weight: bold;
      color: CornSilk;
 }
  figure {
      font-family: 'Annie Use Your Telescope';
-    font-size: 25px;
+     font-size: 25px;
      font-weight: bold;
      float: inherit;
      text-align: center;
@@ -113,22 +119,22 @@
      background-color: Pink;
 }
  * {
-    box-sizing: border-box
+     box-sizing: border-box 
 }
  body {
-    font-family: Verdana, sans-serif;
-     margin:0
+     font-family: Verdana, sans-serif;
+     margin:0 
 }
  .mySlides {
-    display: none
+     display: none 
 }
  img {
-    display: block;
+     display: block;
      margin-left: auto;
      margin-right: auto;
 }
  * {
-    box-sizing:border-box
+     box-sizing:border-box 
 }
 /* Slideshow container */
  .slideshow-container {
@@ -186,18 +192,18 @@
 }
  @-webkit-keyframes fade {
      from {
-        opacity: .4
+         opacity: .4 
     }
      to {
-        opacity: 1
+         opacity: 1 
     }
 }
  @keyframes fade {
      from {
-        opacity: .4
+         opacity: .4 
     }
      to {
-        opacity: 1
+         opacity: 1 
     }
 }
  .accordion {
@@ -220,4 +226,4 @@
      overflow: hidden;
      transition: max-height 0.2s ease-out;
 }
-
+ 

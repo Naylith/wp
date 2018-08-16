@@ -49,6 +49,7 @@ session_start();
          <div>Website navigation links
             <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a3/products.php"> Products </a> 
             <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a2/login.php"> Login </a> 
+           <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a3/combined.php"> Combined </a> 
            <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a3/cart.php"> Cart </a> 
            <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a3/checkout.php"> Checkout </a> 
          </div>
@@ -57,13 +58,23 @@ session_start();
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
+
+<h1>
+
+<form action="receipt.php" id="checkout"  method="post">
+  First name:<input type="text" name="fname" required><br>
+  Last name: <input type="text" name="lname" required><br>
+ E-mail: <input type="email" name="email" required><br>
+Address: 
+<textarea rows="4" cols="50" name="address" form="checkout"required></textarea><br>
+  Telephone: <input type="tel" name="usrtel" required><br>
+Credit card number: <input type="text" name="cardNum" required pattern="[13-16]{13-16}" required><br>
+Expiry date: <input type="month" name="expiry" min="2018-09" required><br>
+  <input type="submit">
+</form>
 
 
-      </article>
-
-
-
+</h1>
 
 
     </main>

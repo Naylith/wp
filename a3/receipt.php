@@ -57,13 +57,29 @@ session_start();
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
+
+<h1>
+
+<?php
+ if (isset($_POST['submit'])) { //to check if the form was submitted
+ $fname= $_POST['fname'];
+ echo $fname;
+ $lname= $_POST['lname'];
+ echo $lname;
+ $email= $_POST['email'];
+ echo $email;
+ $address= $_POST['address'];
+ echo $address;
+ $usrtel= $_POST['usrtel'];
+ echo $usrtel;
 
 
-      </article>
 
 
+}
+?>
 
+</h1>
 
 
     </main>

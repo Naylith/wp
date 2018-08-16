@@ -1,29 +1,60 @@
+<?php
+// Start the session
+session_start();
+?>
+
+
+
 <!DOCTYPE html>
 <html lang='en'>
-   <head>
-      <meta charset="utf-8">
-      <title>Product</title>
-      <!-- Keep wireframe.css for debugging, add your css to style.css -->
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+
+    <!-- Keep wireframe.css for debugging, add your css to style.css -->
       <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css">
+      <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
       <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
       <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src='../wireframe.js'></script>
-   </head>
-   <body>
-      <header>
-         <div>
-            <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a2/index.php"> 
-            <img src='../../media/business-logo.jpg' width='720' /> 
-            </a>
-         </div>
-      </header>
-      <nav>
+    <style>
+      <?php
+        // This PHP code inserts CSS to style the "current page" link in the nav area
+        $here = $_SERVER['SCRIPT_NAME']; 
+        $bits = explode('/',$here); 
+        $filename = $bits[count($bits)-1]; 
+        echo "nav a[href$='$filename'] {
+        box-shadow: 1px 1px 1px 2px navy;
+      }";
+      ?>
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <header>
+               <div>
+         <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a3/index.php"> 
+         <img src='../../media/business-logo.jpg' width='720' /> 
+         </a>
+</div>
+
+
+    </header>
+
+    <nav>
+
          <div>Website navigation links
-            <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a2/index.php"> Home </a> 
-            <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a2/login.php"> Login </a> 
+            <a href="https://titan.csit.rmit.edu.au/~s3743586/wp/a3/products.php"> Products </a> 
+            <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a2/login.php"> Login </a> 
+           <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a3/cart.php"> Cart </a> 
+           <a href="https://titan.csit.rmit.edu.au/~S3743586/wp/a3/checkout.php"> Checkout </a> 
          </div>
-      </nav>
+
+
+    </nav>
       <main>
 
 <p>$120 ea. <br>We currently have a range of adult and baby orange mini lops up for adoption. Adults are available immediately and babies will be
@@ -67,7 +98,7 @@ available from the 29th of July. Pickup available for those in the SA region and
                }
             </script>
 
- 		<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" method="post">
+ 		<form action="cart.php" method="get">
                <input type='hidden' name='id' value= '12345' />
                <select name='option'>
                   <option value="Adult">Adult</option>
@@ -99,18 +130,33 @@ available from the 29th of July. Pickup available for those in the SA region and
                        document.getElementById("myNumber").value = min;
                    }
                }
+
+
+
+
+
             </script>
 
-               <button type="submit">Buy</button>
+
+
+               <button type="submit">Add to Cart</button>
             </form>
+
+
+
+
+
+
       </main>
       <footer>
-      <div>&copy;<script>
-         document.write(new Date().getFullYear());
-      </script> Nicole Brooker, S3743586.</div>
-      <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
-      <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
+         <div>
+            &copy;<script>
+               document.write(new Date().getFullYear());
+            </script> Nicole Brooker, S3743586.
+         </div>
+         <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
+      <div>Maintain links to your <a href='products.txt'>products spreadsheet</a> and <a href='orders.txt'>orders spreadsheet</a> here. 
+         <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
       </footer>
    </body>
 </html>
-

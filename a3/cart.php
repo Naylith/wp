@@ -4,6 +4,19 @@ session_start();
 ?>
 
 
+<?php
+if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['oid'])) {
+// server side code is required here to validate and check if
+// - qty is a positive integer (ie 1 or more)
+// - product/service and option ids are valid
+$_SESSION['cart'][$id]['oid'] = $oid;
+$_SESSION['cart'][$id]['qty'] = $qty;
+// redirection BEFORE any HTML is outputted
+header("Location: cart.php");
+}
+?>
+
+
 
 <!DOCTYPE html>
 <html lang='en'>
@@ -57,10 +70,33 @@ session_start();
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
+      <h1>
 
 
-      </article>
+Product ID <?php echo $_GET["id"]; ?><br>
+Option: <?php echo $_GET["option"]; ?><br>
+Quantity: <?php echo $_GET["qty"]; ?>
+
+<form action="checkout.php" method="get">
+<button type="submit">Proceed to checkout</button>
+            </form>
+
+<form action="products.php" method="post">
+<button type="submit">Cancel</button>
+            </form>
+
+
+      </h1>
+
+
+<?php
+if (isset($_POST['cancel'])) {
+unset($_SESSION['cart']);
+header("Location: products.php");
+}
+?>
+
+
 
 
 
